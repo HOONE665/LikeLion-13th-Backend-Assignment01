@@ -13,8 +13,9 @@ public class ProgrammersList {
         int[] answer = {};
 
         if (n == 1) {
-            answer = new int[b];
-            for (int i = 0; i < b; i++) {
+            int size = b + 1;
+            answer = new int[size];
+            for (int i = 0; i <= b; i++) {
                 answer[i] = num_list[i];
             }
         }
