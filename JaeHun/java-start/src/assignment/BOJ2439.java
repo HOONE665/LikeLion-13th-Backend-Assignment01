@@ -19,6 +19,13 @@ public class BOJ2439 {
         int line = 1;
         while (line <= lines) {
 
+            int space = lines - line;
+            while (space > 0) {
+                System.out.print(" ");
+                space = space - 1;
+            }
+
+
             int star = line;
             while (star > 0) {
                 System.out.print("*");

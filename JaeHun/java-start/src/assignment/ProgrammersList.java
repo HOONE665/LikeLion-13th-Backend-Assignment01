@@ -29,7 +29,7 @@ public class ProgrammersList {
         }
 
         if (n == 3) {
-            int size = b - a;
+            int size = b - a + 1;
             answer = new int[size];
             for (int i = 0; i < size; i++) {
                 answer[i] = num_list[a + i];
@@ -37,7 +37,7 @@ public class ProgrammersList {
         }
 
         if (n == 4) {
-            int size = (b - a) / c;
+            int size = (b - a + c) / c;
             answer = new int[size];
             for (int i = 0; i < size; i++) {
                 answer[i] = num_list[a + i * c];
@@ -52,7 +52,7 @@ public class ProgrammersList {
     public static void main(String[] args) {
         ProgrammersList p = new ProgrammersList();
 
-        int n = 4;
+        int n = 2;
         int[] slicer = {1, 5, 2};
         int[] num_list = {1, 2, 3, 4, 5, 6};
 
